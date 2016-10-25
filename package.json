@@ -32,8 +32,12 @@
     "standard": "^8.4.0",
     "standard-version": "^3.0.0"
   },
+  "bin": {
+    "gruu-reporter": "./cli.js"
+  },
   "files": [
-    "index.js"
+    "index.js",
+    "cli.js"
   ],
   "keywords": [
     "any",
