@@ -35,7 +35,22 @@
   "files": [
     "index.js"
   ],
-  "keywords": [],
+  "keywords": [
+    "any",
+    "failing",
+    "failing-only",
+    "failonly",
+    "gruu",
+    "gruu-reporter",
+    "only",
+    "report",
+    "reporter",
+    "small",
+    "tap",
+    "tap-reporter",
+    "tape",
+    "testanything"
+  ],
   "config": {
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"
