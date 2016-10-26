@@ -2,23 +2,22 @@
 
 > Small reporter for TAP output, showing only failing tests and small stack traces. Built for [gruu][] test runner, but works for any other TAP-producing libs
 
-[![code climate][codeclimate-img]][codeclimate-url] [![standard code style][standard-img]][standard-url] [![travis build status][travis-img]][travis-url] [![coverage status][coveralls-img]][coveralls-url] [![dependency status][david-img]][david-url]
+[![code climate][codeclimate-img]][codeclimate-url] [![standard code style][standard-img]][standard-url] [![travis build status][travis-img]][travis-url] [![dependency status][david-img]][david-url]
 
 ## Install
 > Install with [npm](https://www.npmjs.com/)
 
 ```sh
-$ npm i gruu-reporter --save
+npm install gruu-reporter --global
+npm install gruu-reporter --save-dev
 ```
 
 ## Usage
-> For more use-cases see the [tests](./test.js)
 
-```js
-const gruuReporter = require('gruu-reporter')
+```sh
+tape test/*.js | gruu-reporter
+node test.js | gruu-reporter
 ```
-
-## API
 
 ## Contributing
 Pull requests and stars are always welcome. For bugs and feature requests, [please create an issue](https://github.com/tunnckoCore/gruu-reporter/issues/new).  

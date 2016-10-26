@@ -1,0 +1,12 @@
+TAP version 13
+ok 1 foo bar baz
+ok 2 qux sata lorem
+ok 3 foobar 333 xxx
+ok 4 zezz aaa bbb
+ok 5 hell yeah
+1..5
+# tests 5
+# pass  5
+# fail  0
+
+# ok
