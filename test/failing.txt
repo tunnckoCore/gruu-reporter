@@ -1,86 +1,42 @@
 TAP version 13
-# preferLocal option
-ok 1 - preferLocal option
-# execa.sync()
-ok 2 - execa.sync()
-# execa.shellSync()
-ok 3 - execa.shellSync()
-# helpful error trying to provide an input stream in sync mode
-ok 4 - helpful error trying to provide an input stream in sync mode
-# execa() returns a promise with kill() and pid
-ok 5 - execa() returns a promise with kill() and pid
-(node:26159) DeprecationWarning: execa.spawn() is deprecated. Use execa() instead.
-(node:26159) Warning: Possible EventEmitter memory leak detected. 11 exit listeners added. Use emitter.setMaxListeners() to increase limit
-# execa() rejects if running non-executable
-ok 6 - execa() rejects if running non-executable
-# stdout/stderr available on errors
-ok 7 - stdout/stderr available on errors
-# include stdout and stderr in errors for improved debugging
-ok 8 - include stdout and stderr in errors for improved debugging
-# maxBuffer affects stdout
-ok 9 - maxBuffer affects stdout
-# maxBuffer affects stderr
-ok 10 - maxBuffer affects stderr
-# skip throwing when using reject option
-ok 11 - skip throwing when using reject option
-# input option can be a String - sync
-ok 12 - input option can be a String - sync
-# input option can be a Buffer - sync
-ok 13 - input option can be a Buffer - sync
-# result.signal is null for successful execution
-not ok 14 - result.signal is null for successful execution
+1..11
+# :) one
+ok 1 one
+# :) two (sync todo) # TODO
+ok 2 two (sync todo) # TODO
+# :) four (skip) # SKIP
+ok 4 four (skip) # SKIP
+# :) foo
+ok 5 foo
+# :( six (async failing arg)
+not ok 6 six (async failing arg)
   ---
-    operator: undefined
-    expected: undefined
-    actual: undefined
-    at: _callee25$ (test.js:244:8)
+  name: Error
+  message: Use "cb" callback argument of test 6!
+  at: /home/charlike/dev/gruu/utils.js:35:15)
   ...
-# execa.spawn()
-ok 15 - execa.spawn()
-# execa()
-ok 16 - execa()
-# buffer
-ok 17 - buffer
-# execa.stdout()
-ok 18 - execa.stdout()
-# execa.stderr()
-ok 19 - execa.stderr()
-# execa.shell()
-ok 20 - execa.shell()
-# stripEof option
-ok 21 - stripEof option
-# input option can be a String
-ok 22 - input option can be a String
-# input option can be a Buffer
-ok 23 - input option can be a Buffer
-# you can write to child.stdin
-ok 24 - you can write to child.stdin
-# opts.stdout:ignore - stdout will not collect data
-ok 25 - opts.stdout:ignore - stdout will not collect data
-# result.signal is null if process failed, but was not killed
-ok 26 - result.signal is null if process failed, but was not killed
-# input can be a Stream
-ok 27 - input can be a Stream
-# use relative path with '..' chars
-not ok 28 - use relative path with '..' chars
+# :) bar
+ok 7 bar
+# :( eight (sync fail)
+not ok 8 eight (sync fail)
   ---
-    operator: ===
-    expected: fosdfsdfsdfsdfo
-    actual: foo
-    at: "foo"
+  name: Error
+  message: aloha
+  at: /home/charlike/dev/gruu/test.js:48:9
   ...
-# err.killed is true if process was killed directly
-ok 29 - err.killed is true if process was killed directly
-# err.killed is false if process was killed indirectly
-ok 30 - err.killed is false if process was killed indirectly
-# err.signal is SIGTERM
-ok 31 - err.signal is SIGTERM
-# err.signal is SIGINT
-ok 32 - err.signal is SIGINT
-# execa() returns code and failed properties
-ok 33 - execa() returns code and failed properties
+# :) nine
+ok 9 nine
+# :) ten (sync todo fail) # TODO
+ok 10 ten (sync todo fail) # TODO
+# :) three (async)
+ok 3 three (async)
+# :) eleven (async last)
+ok 11 eleven (async last)
+# all tests 11
+# runned 8
+# passed 6
+# failed 2
+# skip 1
+# todo 2
 
-1..33
-# tests 33
-# pass 31
-# fail 2
+# not ok

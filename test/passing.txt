@@ -1,12 +1,28 @@
 TAP version 13
-ok 1 foo bar baz
-ok 2 qux sata lorem
-ok 3 foobar 333 xxx
-ok 4 zezz aaa bbb
-ok 5 hell yeah
-1..5
-# tests 5
-# pass  5
-# fail  0
+1..9
+# :) one
+ok 1 one
+# :) two (sync todo) # TODO
+ok 2 two (sync todo) # TODO
+# :) four (skip) # SKIP
+ok 4 four (skip) # SKIP
+# :) foo
+ok 5 foo
+# :) bar
+ok 6 bar
+# :) nine
+ok 7 nine
+# :) ten (sync todo fail) # TODO
+ok 8 ten (sync todo fail) # TODO
+# :) three (async)
+ok 3 three (async)
+# :) eleven (async last)
+ok 9 eleven (async last)
+# all tests 9
+# runned 6
+# passed 6
+# failed 0
+# skip 1
+# todo 2
 
 # ok
