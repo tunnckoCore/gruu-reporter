@@ -1,6 +1,6 @@
 {
   "name": "gruu-reporter",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "Small reporter for TAP output, showing only failing tests and small stack traces. Built for [gruu][] test runner, but works for any other TAP-producing libs",
   "repository": "tunnckoCore/gruu-reporter",
   "author": "Charlike Mike Reagent <@tunnckoCore> (http://www.tunnckocore.tk)",
